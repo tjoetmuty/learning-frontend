@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan week5</title>
+</head>
+<body>
+    <h1 id="text">Latihan DOM: Ubah Warna</h1>
+    <p>Klik tombol di bawah untuk mengubah Warna teks diatas</p>
+    <input type="submit" onclick="text()">
+
+    <script>
+        const textColor = document.getElementById('text');
+        const colors = ['red', 'green', 'blue'];
+
+        const text = () => {
+            const apa = Math.floor(Math.random() * colors.length) //math random adalah perulangan
+            textColor.style.color = colors[apa]
+        }
+    </script>
+</body>
+</html>

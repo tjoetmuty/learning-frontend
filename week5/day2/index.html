@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week 5 day 2</title>
+</head>
+<body>
+    <form action="#">
+        <div class="wrapper" style="text-align: center;">
+            enter your name:
+            <input type="text" id="t1"/>
+            <br>
+            <input type="submit" style="position: absolute;" onclick="func()"> //onclick adalah event handler (on + event)
+        </div>
+    </form>
+    <script>
+        let textInput = document.getElementById('t1');
+        function func() {
+            if (textInput.value.length == 0){
+                textInput.style.backgroundColor  = 'red';
+            } else{
+                textInput.style.backgroundColor = 'green';
+            }
+        }
+    </script>
+</body>
+</html>
