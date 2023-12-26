@@ -9,7 +9,32 @@ function App() {
 const handleClick = () => {
   setCount(count + 1);
 }
- 
+
+const people = [
+  {
+    id: 1,
+    name: "John Doe",
+    email: "johndoe@mail.com",
+  },
+  {
+    id: 2,
+    name: "Jane Doe",
+    email: "janedoe@mail.com",
+  },
+
+  {
+    id: 3,
+    name: "Bob Doe",
+    email: "bobdoe@mail.com",
+  },
+  {
+    id: 4,
+    name: "Alice Doe",
+    email: "alicedoe@mail.com",
+  },
+];
+
+
   return (
     <>
       <Student name="Eddy" age={30} gender="male" />
