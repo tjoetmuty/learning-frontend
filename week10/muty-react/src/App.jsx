@@ -1,39 +1,41 @@
 import { useState } from "react";
 import Student from "./Student";
+import { Routes, Route } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import { ContactPage } from "./pages/ContactPage";
 
 function App() {
   const [name, setName] = useState("muty");
   const [count, setCount] = useState(0);
   const [todos, setTodos] = useState(["Learn ReactJS", "Learn React pokoknya"]);
 
-const handleClick = () => {
-  setCount(count + 1);
-}
+  const handleClick = () => {
+    setCount(count + 1);
+  };
 
-const people = [
-  {
-    id: 1,
-    name: "John Doe",
-    email: "johndoe@mail.com",
-  },
-  {
-    id: 2,
-    name: "Jane Doe",
-    email: "janedoe@mail.com",
-  },
+  const people = [
+    {
+      id: 1,
+      name: "John Doe",
+      email: "johndoe@mail.com",
+    },
+    {
+      id: 2,
+      name: "Jane Doe",
+      email: "janedoe@mail.com",
+    },
 
-  {
-    id: 3,
-    name: "Bob Doe",
-    email: "bobdoe@mail.com",
-  },
-  {
-    id: 4,
-    name: "Alice Doe",
-    email: "alicedoe@mail.com",
-  },
-];
-
+    {
+      id: 3,
+      name: "Bob Doe",
+      email: "bobdoe@mail.com",
+    },
+    {
+      id: 4,
+      name: "Alice Doe",
+      email: "alicedoe@mail.com",
+    },
+  ];
 
   return (
     <>
@@ -55,15 +57,20 @@ const people = [
       </div>
 
       <div>
-      <ul>
-        {todos.map((todo, index) => (
-          <li key={index}>{todo}</li>
-        ))}
-      </ul>
-      <button onClick={() => setTodos([...todos, "Learn NextJS"])}>
-        Add Todo
-      </button>
-    </div>
+        <ul>
+          {todos.map((todo, index) => (
+            <li key={index}>{todo}</li>
+          ))}
+        </ul>
+        <button onClick={() => setTodos([...todos, "Learn NextJS"])}>
+          Add Todo
+        </button>
+      </div>
+
+      <Routes>
+        <Route path="/" element={<Homepage/>}/>
+        <Route path="/contact" element={<ContactPage/>}/>
+      </Routes>
     </>
   );
 }
