@@ -13,7 +13,11 @@ const Reactrouter = () => {
     </nav>
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/contact" element={<ContactPage />}>
+          <Route/>
+          <Route/>
+          <Route/>
+        </Route>
       </Routes>
     </>
   );
