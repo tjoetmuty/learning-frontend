@@ -1,8 +1,5 @@
 import { useState } from "react";
 import Student from "./Student";
-import { Routes, Route } from "react-router-dom";
-import Homepage from "./pages/Homepage";
-import { ContactPage } from "./pages/ContactPage";
 
 function App() {
   const [name, setName] = useState("muty");
@@ -66,11 +63,6 @@ function App() {
           Add Todo
         </button>
       </div>
-
-      <Routes>
-        <Route path="/" element={<Homepage/>}/>
-        <Route path="/contact" element={<ContactPage/>}/>
-      </Routes>
     </>
   );
 }
