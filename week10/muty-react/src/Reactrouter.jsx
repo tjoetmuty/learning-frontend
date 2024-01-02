@@ -14,7 +14,7 @@ const Reactrouter = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/contact" element={<ContactPage />}>
-          <Route/>
+          <Route path="/email" element={<p>email: </p>}/>
           <Route/>
           <Route/>
         </Route>
