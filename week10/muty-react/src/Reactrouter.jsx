@@ -11,6 +11,10 @@ const Reactrouter = () => {
         <Route path="phone" element={<p>phone : +62 856 9606 5930</p>} />
         <Route path="address" element={<p>address : palu</p>} />
       </Route>
+      <Route path="/articles" element={<p>Article</p>}>
+        <Route path=":articleId" element={<p>Article Detail</p>}></Route>
+        <Route path="add" element={<p>Add Article</p>}></Route>
+      </Route>
     </Routes>
   );
   // const routes = useRoutes([

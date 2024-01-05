@@ -12,6 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/articles">Article</Link></li>
         </ul>
     </nav>
     {/* <App /> */}
