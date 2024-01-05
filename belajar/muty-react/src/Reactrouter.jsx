@@ -15,6 +15,7 @@ const Reactrouter = () => {
         <Route path=":articleId" element={<p>Article Detail</p>}></Route>
         <Route path="add" element={<p>Add Article</p>}></Route>
       </Route>
+      <Route></Route>
     </Routes>
   );
   // const routes = useRoutes([
