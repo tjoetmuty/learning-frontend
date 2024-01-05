@@ -1,6 +1,7 @@
 import { useRoutes, Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import { ContactPage } from "./pages/ContactPage";
+import ArticlePage from "./pages/ArticlePage";
 
 const Reactrouter = () => {
   return (
@@ -11,7 +12,7 @@ const Reactrouter = () => {
         <Route path="phone" element={<p>phone : +62 856 9606 5930</p>} />
         <Route path="address" element={<p>address : palu</p>} />
       </Route>
-      <Route path="/articles" element={<p>Article</p>}>
+      <Route path="/articles" element={ArticlePage}>
         <Route path=":articleId" element={<p>Article Detail</p>}></Route>
         <Route path="add" element={<p>Add Article</p>}></Route>
       </Route>
