@@ -94,6 +94,46 @@ const PokemonDetail = () => {
             />
             <h1>Generation 4</h1>
           </div>
+          <div>
+            <img
+              src={
+                data?.sprites?.versions?.["generation-v"]["black-white"].front_default
+              }
+              alt="image-1"
+              className="w-24"
+            />
+            <h1>Generation 5</h1>
+          </div>
+          <div>
+            <img
+              src={
+                data?.sprites?.versions?.["generation-vi"]["omegaruby-alphasapphire"].front_default
+              }
+              alt="image-1"
+              className="w-24"
+            />
+            <h1>Generation 6</h1>
+          </div>
+          <div>
+            <img
+              src={
+                data?.sprites?.versions?.["generation-vii"].icons.front_default
+              }
+              alt="image-1"
+              className="w-24"
+            />
+            <h1>Generation 7</h1>
+          </div>
+          <div>
+            <img
+              src={
+                data?.sprites?.versions?.["generation-viii"].icons.front_default
+              }
+              alt="image-1"
+              className="w-24"
+            />
+            <h1>Generation 8</h1>
+          </div>
         </div>
       </div>
     </div>
